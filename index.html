@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>My Portfolio</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Arial, sans-serif;
+            background: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
+            min-height: 100vh;
+            color: #222;
+            overflow-x: hidden;
+        }
+        header {
+            text-align: center;
+            padding: 60px 20px 30px 20px;
+            animation: fadeInDown 1s;
+        }
+        @keyframes fadeInDown {
+            from { opacity: 0; transform: translateY(-40px);}
+            to { opacity: 1; transform: translateY(0);}
+        }
+        h1 {
+            font-size: 2.8rem;
+            margin-bottom: 10px;
+            letter-spacing: 2px;
+        }
+        h2 {
+            font-size: 2rem;
+            margin: 40px 0 20px 0;
+            text-align: center;
+            color: #f76d6d;
+            letter-spacing: 1px;
+        }
+        .about {
+            max-width: 600px;
+            margin: 0 auto 40px auto;
+            background: rgba(255,255,255,0.8);
+            border-radius: 12px;
+            padding: 24px;
+            box-shadow: 0 4px 24px rgba(0,0,0,0.07);
+            animation: fadeIn 1.2s;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0;}
+            to { opacity: 1;}
+        }
+        .projects {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+            padding: 0 20px 40px 20px;
+        }
+        .project-card {
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+            width: 300px;
+            padding: 24px;
+            transition: transform 0.3s, box-shadow 0.3s;
+            animation: popIn 0.8s;
+        }
+        .project-card:hover {
+            transform: translateY(-10px) scale(1.03);
+            box-shadow: 0 8px 24px rgba(0,0,0,0.15);
+        }
+        @keyframes popIn {
+            from { opacity: 0; transform: scale(0.9);}
+            to { opacity: 1; transform: scale(1);}
+        }
+        .project-title {
+            font-size: 1.2rem;
+            color: #f76d6d;
+            margin-bottom: 10px;
+        }
+        .project-desc {
+            font-size: 1rem;
+            color: #444;
+            margin-bottom: 10px;
+        }
+        .project-link {
+            color: #fda085;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.2s;
+        }
+        .project-link:hover {
+            color: #f76d6d;
+        }
+        footer {
+            text-align: center;
+            padding: 30px 10px 10px 10px;
+            color: #fff;
+            font-size: 1rem;
+            background: rgba(0,0,0,0.08);
+            letter-spacing: 1px;
+            animation: fadeIn 1.5s;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Vaishnavi Jambhulkar</h1>
+        <p>Frontend Developer &amp; Designer</p>
+    </header>
+    <section class="about">
+        <h2>About Me</h2>
+        <p>
+            Hi! I'm Vaishnavi, a passionate web developer with a love for creating interactive and visually appealing websites. I specialize in HTML, CSS, JavaScript, and enjoy bringing ideas to life with smooth animations and responsive design.
+        </p>
+    </section>
+    <h2>Projects</h2>
+    <section class="projects">
+        <div class="project-card">
+            <div class="project-title">Animated Landing Page</div>
+            <div class="project-desc">A modern landing page with smooth scroll and fade-in animations.</div>
+            <a class="project-link" href="#" target="_blank">View Project</a>
+        </div>
+        <div class="project-card">
+            <div class="project-title">Portfolio Website</div>
+            <div class="project-desc">My personal portfolio built with HTML, CSS, and subtle animations.</div>
+            <a class="project-link" href="#" target="_blank">View Project</a>
+        </div>
+        <div class="project-card">
+            <div class="project-title">Interactive Gallery</div>
+            <div class="project-desc">A responsive image gallery with hover and zoom effects.</div>
+            <a class="project-link" href="#" target="_blank">View Project</a>
+        </div>
+    </section>
+    <footer>
+        &copy; 2025 Vaishnavi Jambhulkar &mdash; Connect on <a href="#" style="color:#fff;text-decoration:underline;">LinkedIn</a>
+    </footer>
+</body>
+</html>
